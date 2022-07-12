@@ -615,14 +615,32 @@ Portfolio Start
   background: #413d4b;
 }
 
+.port-menu ul li label {
+  color: #413d4b;
+  float: left;
+  padding: 10px 6px;
+  border: 1px solid #ddd;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #413d4b;
+  transition: all linear .3s;
+  margin: 0 3px;
+}
+
+.port-menu ul li label:hover {
+  color: #fff;
+  background: #413d4b;
+}
+
 .portfolio-item {
   width: 100%;
 }
 
 .port-item {
   box-sizing: border-box;
-  width: 16%;
-  height: 200px;
+  width: 16.7% !important;
+  height: 196px !important;
   float: left;
 }
 
@@ -634,25 +652,25 @@ Portfolio Start
 .port-item:nth-child(2),
 .port-item:nth-child(11) {
   background: #acacac;
-  width: 17%;
+  /* width: 17%; */
 }
 
 .port-item:nth-child(3),
 .port-item:nth-child(10) {
   background: #a1a1a1;
-  width: 17%;
+  /* width: 17%; */
 }
 
 .port-item:nth-child(4),
 .port-item:nth-child(9) {
   background: #8a8a8a;
-  width: 17%;
+  /* width: 17%; */
 }
 
 .port-item:nth-child(5),
 .port-item:nth-child(8) {
   background: #b6b6b6;
-  width: 17%;
+  /* width: 17%; */
 }
 
 .port-item:nth-child(6),
