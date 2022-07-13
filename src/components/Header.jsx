@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -13,13 +14,76 @@ export default function Header() {
           <div className="menu">
             <ul>
               <li>
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">expertise</a>
-                <a href="#">teams</a>
-                <a href="#">works</a>
-                <a href="#">people say</a>
-                <a href="#">contact</a>
+                <Link
+                  activeClass="active"
+                  to="banner"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  home
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  about
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="expertise"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  expertise
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="teams"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  teams
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="works"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  works
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="quote"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  people say
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
+                  contact
+                </Link>
               </li>
             </ul>
           </div>

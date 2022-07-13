@@ -3,7 +3,7 @@ import React from "react";
 export default function Quote() {
   return (
     <>
-      <div className="full-wrapper quote">
+      <div className="full-wrapper quote" name="quote">
         <div className="wrapper quote-content">
           <p>
             <i className="flaticon-quotation-marks"></i>

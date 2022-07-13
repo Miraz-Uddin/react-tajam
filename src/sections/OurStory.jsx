@@ -3,7 +3,7 @@ import React from "react";
 export default function OurStory() {
   return (
     <>
-      <div className="full-wrapper about">
+      <div className="full-wrapper about" name="about">
         <div className="wrapper">
           <div className="about-left">
             <img src="assets/images/story_img.png" alt="Image" />

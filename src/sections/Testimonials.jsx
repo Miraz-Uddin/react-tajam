@@ -3,7 +3,7 @@ import React from "react";
 export default function Testimonials() {
   return (
     <>
-      <div className="full-wrapper client">
+      <div className="full-wrapper client" name="contact">
         <div className="wrapper">
           <div className="form">
             <h2>GIVE US A GOOD NEWS</h2>

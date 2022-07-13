@@ -15,7 +15,7 @@ const FilterBox = ({ filters, updateFilters }) => {
   };
 
   return (
-    <div className="full-wrapper port">
+    <div className="full-wrapper port" name="works">
       <div className="wrapper">
         <div className="sameHead port-head">
           <h2>OUR WORKS</h2>

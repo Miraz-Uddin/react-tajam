@@ -3,7 +3,7 @@ import React from "react";
 export default function Expertise() {
   return (
     <>
-      <div className="full-wrapper expertise">
+      <div className="full-wrapper expertise" name="expertise">
         <div className="wrapper">
           <div className="sameHead exp">
             <h2>EXPERTISE</h2>

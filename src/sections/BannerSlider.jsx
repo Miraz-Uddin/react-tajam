@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BannerSlider() {
   return (
-    <div className="full-wrapper banner">
+    <div className="full-wrapper banner" name="banner">
       <div className="wrapper banner-content">
         <h1>We Are Awesome Creative Agency</h1>
         <h2>

@@ -3,7 +3,7 @@ import React from "react";
 export default function TeamMembers() {
   return (
     <>
-      <div className="full-wrapper team">
+      <div className="full-wrapper team" name="teams">
         <div className="wrapper team-content">
           <div className="sameHead team-head">
             <h2>MEET OUR AMAZING TEAM</h2>

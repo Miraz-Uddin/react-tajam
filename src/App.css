@@ -92,11 +92,13 @@ Common CSS End
 Header Start
 ==============================================*/
 .header {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
+  background-color: #302756;
 }
 
 .logo {
@@ -108,8 +110,8 @@ Header Start
 .menu {
   width: 1030px;
   text-align: right;
-  padding-top: 31px;
   float: left;
+  line-height: 70px;
 }
 
 .menu ul li {
@@ -128,6 +130,10 @@ Header Start
 }
 
 .menu ul li a:hover {
+  color: #00e0d0;
+}
+
+.menu ul li a.active {
   color: #00e0d0;
 }
 
