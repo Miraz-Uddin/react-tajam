@@ -92,13 +92,11 @@ Common CSS End
 Header Start
 ==============================================*/
 .header {
-  /* position: absolute; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9999;
-  background-color: #302756;
 }
 
 .logo {
@@ -1189,6 +1187,14 @@ Footer Start
   letter-spacing: 0.025em;
 }
 
-/*==============================================
-Footer End
-==============================================*/
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  display: none;
+}
+
+.backToTop img {
+  width: 100%;
+}

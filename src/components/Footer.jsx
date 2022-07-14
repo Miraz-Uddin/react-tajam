@@ -78,6 +78,9 @@ export default function Footer() {
           <div className="clr"></div>
         </div>
       </div>
+      <div className="backToTop">
+        <img src="assets/images/story_img.png" alt="Logo" />
+      </div>
     </>
   );
 }

@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link as NavigationPageLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 export default function Header() {
+  const navElement = useRef();
+
+  function handleScroll(e) {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition < 650) {
+      document.querySelector(".backToTop").style.display = "none";
+      navElement.current.style.backgroundColor = "transparent";
+    } else {
+      document.querySelector(".backToTop").style.display = "inline-block";
+      navElement.current.style.backgroundColor = "#302756";
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <div className="full-wrapper header">
+      <div className="full-wrapper header" ref={navElement}>
         <div className="wrapper">
           <div className="logo">
             <NavigationPageLink to="/">
