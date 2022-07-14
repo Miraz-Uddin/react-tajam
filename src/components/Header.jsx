@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as NavigationPageLink } from "react-router-dom";
 import { Link } from "react-scroll";
 
 export default function Header() {
@@ -7,9 +8,9 @@ export default function Header() {
       <div className="full-wrapper header">
         <div className="wrapper">
           <div className="logo">
-            <a href="index.html">
+            <NavigationPageLink to="/">
               <img src="assets/images/logo.png" alt="Logo" />
-            </a>
+            </NavigationPageLink>
           </div>
           <div className="menu">
             <ul>
@@ -29,7 +30,7 @@ export default function Header() {
                   to="about"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-72}
                   duration={500}
                 >
                   about
@@ -39,7 +40,7 @@ export default function Header() {
                   to="expertise"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-72}
                   duration={500}
                 >
                   expertise
@@ -49,7 +50,7 @@ export default function Header() {
                   to="teams"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-72}
                   duration={500}
                 >
                   teams
@@ -59,7 +60,7 @@ export default function Header() {
                   to="works"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-72}
                   duration={500}
                 >
                   works
@@ -69,7 +70,7 @@ export default function Header() {
                   to="quote"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-72}
                   duration={500}
                 >
                   people say
@@ -79,7 +80,7 @@ export default function Header() {
                   to="contact"
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={-72}
                   duration={500}
                 >
                   contact

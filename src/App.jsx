@@ -1,28 +1,14 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import PublicLayout from "./components/Layout/PublicLayout";
-import BannerSlider from "./sections/BannerSlider";
-import Expertise from "./sections/Expertise";
-import OurStory from "./sections/OurStory";
-import PortFolios from "./sections/PortFolios";
-import Quote from "./sections/Quote";
-import TeamMembers from "./sections/TeamMembers";
-import Testimonials from "./sections/Testimonials";
-import WatchOurStory from "./sections/WatchOurStory";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <>
-      <PublicLayout>
-        <BannerSlider />
-        <OurStory />
-        <WatchOurStory />
-        <Expertise />
-        <TeamMembers />
-        <PortFolios />
-        <Quote />
-        <Testimonials />
-      </PublicLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
