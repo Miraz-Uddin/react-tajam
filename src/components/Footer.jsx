@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegPaperPlane } from "react-icons/fa";
+import { animateScroll } from "react-scroll";
 
 export default function Footer() {
   return (
@@ -79,7 +80,11 @@ export default function Footer() {
         </div>
       </div>
       <div className="backToTop">
-        <img src="assets/images/story_img.png" alt="Logo" />
+        <img
+          src="assets/images/story_img.png"
+          alt="Logo"
+          onClick={() => animateScroll.scrollToTop()}
+        />
       </div>
     </>
   );

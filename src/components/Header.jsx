@@ -9,7 +9,12 @@ export default function Header() {
     const scrollPosition = window.scrollY;
     if (scrollPosition < 650) {
       document.querySelector(".backToTop").style.display = "none";
-      navElement.current.style.backgroundColor = "transparent";
+
+      if (scrollPosition > 150) {
+        navElement.current.style.backgroundColor = "#302756";
+      } else {
+        navElement.current.style.backgroundColor = "transparent";
+      }
     } else {
       document.querySelector(".backToTop").style.display = "inline-block";
       navElement.current.style.backgroundColor = "#302756";
@@ -52,6 +57,16 @@ export default function Header() {
                   duration={500}
                 >
                   about
+                </Link>
+                <Link
+                  activeClass="active"
+                  to="story"
+                  spy={true}
+                  smooth={true}
+                  offset={-72}
+                  duration={500}
+                >
+                  story
                 </Link>
                 <Link
                   activeClass="active"
