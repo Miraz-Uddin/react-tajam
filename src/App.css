@@ -232,11 +232,11 @@ Banner Start
   margin: 0 3px;
 }
 
-.slide i {
+/* .slide svg {
   color: #bbbabc;
 }
 
-.slide-over i {
+.slide-over svg {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -246,8 +246,39 @@ Banner Start
   transition: all linear .3s;
 }
 
-.slide:hover .slide-over i {
+.slide:hover .slide-over svg {
   opacity: 1;
+} */
+
+.banner-content .slick-dots li {
+  border: 1px solid #bbbabc;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.banner-content .slick-dots li button:before {
+  font-size: 21px;
+  line-height: 19px;
+  opacity: 0;
+  left: -3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all linear .3s;
+}
+
+.banner-content .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #00e0d0;
+}
+
+.banner-content .slick-dots li:hover button:before {
+  opacity: 1;
+  color: #00e0d0;
+}
+
+.banner-content .slick-dots {
+  bottom: -100px;
 }
 
 /*==============================================
